@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+img {
+  width: 100%;
+}
+.header-wrapper,
+.Footer-wrapper {
+  background-color: cornflowerblue;
+  text-align: center;
+  font-size: 2em;
+  padding: 20px 0px;
+}
+.puppyList {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+.puppy1,
+.puppy2,
+.missingpuppy {
+  width: 33%;
+  border: 1px solid red;
+  padding: 0 20px;
+}
+.missingpuppy {
+  background-color: chocolate;
+}
+.MorePuppy {
+  text-align: center;
+  font: 1.5em;
+  margin: 20px 0;
+}
+.morepuppies {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+.puppy3,
+.puppy4 {
+  width: 50%;
+}
