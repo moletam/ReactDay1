@@ -9,7 +9,7 @@ const Puppy1 = () => {
           <img src={puppy1} alt="" />
         </div>
         <div className="missingpuppy">
-          <h1>Missing Puppy</h1>
+          <p>Missing Puppy</p>
         </div>
         <div className="puppy2">
           <img src={puppy2} alt="" />
