@@ -41,3 +41,9 @@ img {
 .puppy4 {
   width: 50%;
 }
+.stud {
+  border: 1px solid red;
+  width: 20%;
+  margin-bottom: 20px;
+  margin-left: 30%;
+}
