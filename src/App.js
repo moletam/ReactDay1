@@ -1,39 +1,40 @@
 // import Puppy from "./Puppy";
-// import PI, { add, mul } from "./Components/Calculator";
-// import "./Assets/Css/Style.css";
-import abc from "./Assets/Img/Logo.png";
-import ban from "./Assets/Img/banner-puppies.jpg";
-import Employee from "./Components/Employee";
-import Student from "./Components/Student";
+// // import PI, { add, mul } from "./Components/Calculator";
+// // // import "./Assets/Css/Style.css";
+// // import abc from "./Assets/Img/Logo.png";
+// // import ban from "./Assets/Img/banner-puppies.jpg";
+// import Card from "./Components/Card";
+// // import Employee from "./Components/Employee";
+// // import Student from "./Components/Student";
+// import Contact from "./Components/Contacts";
+// // import PI, * as cal from "./Components/Calculator";
 
-// import PI, * as cal from "./Components/Calculator";
+// import Card from "./Components/Card";
+// import Contact from "./Components/Contacts";
+// import Account from "./Components/Account";
+// import Login from "./Components/Login";
+// import SignUp from "./Components/Signup";
+import StateMgmt from "./Components/StateMgmt";
+// import SignUp from "./Components/SignUp";
 function App() {
+  // const isSession = false;
+  // if (isSession) {
+  //   return (
+  //     <div>
+  //       <Login />
+  //     </div>
+  //   );
+  // } else {
+  //   return (
+  //     <div>
+  //       <SignUp />
+  //     </div>
+  //   );
+  // }
   return (
-    <div className="app">
-      {/* <Puppy /> */}
-      {/* <h1> PI = {PI}</h1>
-      <h1> sum = {cal.add(4, 5)}</h1>
-      <h1> sum = {cal.mul(4, 5)}</h1>
-      <h1> sum = {cal.factorial(5)}</h1> */}
-      {/* 
-      <div className="stud">
-        <h1>Name : Abebe</h1>
-        <h1>Dept : Chemistry</h1>
-        <h1>Hoppy : Chemist</h1>
-      </div>
-      <div className="stud">
-        <h1>Name : Abebe</h1>
-        <h1>Dept : Chemistry</h1>
-        <h1>Hoppy : Chemist</h1>
-      </div>
-      <div className="stud">
-        <h1>Name : Abebe</h1>
-        <h1>Dept : Chemistry</h1>
-        <h1>Hoppy : Chemist</h1>
-      </div> */}
-      <Student name="Abebe" dept="CoSc" hoppy="Developer" path={ban} />
-      <Student name="Abebe" dept="CoSc" hoppy="Developer" path={abc} />
-      <Employee name="Alex" salary="235345" />
+    <div>
+      {/* <Account /> */}
+      <StateMgmt />
     </div>
   );
 }
