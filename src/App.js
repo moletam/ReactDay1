@@ -15,6 +15,7 @@
 // import Login from "./Components/Login";
 // import SignUp from "./Components/Signup";
 import StateMgmt from "./Components/StateMgmt";
+import SttMgmt from "./Components/SttMgmt";
 // import SignUp from "./Components/SignUp";
 function App() {
   // const isSession = false;
@@ -35,6 +36,7 @@ function App() {
     <div>
       {/* <Account /> */}
       <StateMgmt />
+      <SttMgmt />
     </div>
   );
 }
