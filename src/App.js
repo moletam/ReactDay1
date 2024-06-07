@@ -9,13 +9,16 @@
 // import Contact from "./Components/Contacts";
 // // import PI, * as cal from "./Components/Calculator";
 
+import Form from "./Components/Form";
+import Payrol from "./Components/Payrol";
+
 // import Card from "./Components/Card";
 // import Contact from "./Components/Contacts";
 // import Account from "./Components/Account";
-// import Login from "./Components/Login";
-// import SignUp from "./Components/Signup";
-import StateMgmt from "./Components/StateMgmt";
-import SttMgmt from "./Components/SttMgmt";
+// // import Login from "./Components/Login";
+// // import SignUp from "./Components/Signup";
+// import StateMgmt from "./Components/StateMgmt";
+// import SttMgmt from "./Components/SttMgmt";
 // import SignUp from "./Components/SignUp";
 function App() {
   // const isSession = false;
@@ -35,8 +38,10 @@ function App() {
   return (
     <div>
       {/* <Account /> */}
-      <StateMgmt />
-      <SttMgmt />
+      {/* <StateMgmt />
+      <SttMgmt /> */}
+      {/* <Form /> */}
+      <Payrol />
     </div>
   );
 }
