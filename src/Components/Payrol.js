@@ -24,22 +24,31 @@ const Payrol = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setPension(basicSalary * 0.07);
-    if (basicSalary <= 600 && basicSalary > 0) setIncomeTax(0);
-    else if (basicSalary <= 1650) setIncomeTax(basicSalary * 0.1 - 60);
-    else if (basicSalary <= 3200) setIncomeTax(basicSalary * 0.15 - 142.5);
-    else if (basicSalary <= 5250) setIncomeTax(basicSalary * 0.2 - 302.5);
-    else if (basicSalary <= 7800) setIncomeTax(basicSalary * 0.25 - 565);
-    else if (basicSalary <= 10900) setIncomeTax(basicSalary * 0.3 - 955);
-    else if (basicSalary > 10900) setIncomeTax(basicSalary * 0.35 - 1500);
+    setTimeout(setPension(basicSalary * 0.07), 0);
+    if (basicSalary <= 600 && basicSalary > 0) setTimeout(setIncomeTax(0), 5);
+    else if (basicSalary <= 1650)
+      setTimeout(setIncomeTax(basicSalary * 0.1 - 60), 0);
+    else if (basicSalary <= 3200)
+      setTimeout(setIncomeTax(basicSalary * 0.15 - 142.5, 0));
+    else if (basicSalary <= 5250)
+      setTimeout(setIncomeTax(basicSalary * 0.2 - 302.5, 0));
+    else if (basicSalary <= 7800)
+      setTimeout(setIncomeTax(basicSalary * 0.25 - 565, 0));
+    else if (basicSalary <= 10900)
+      setTimeout(setIncomeTax(basicSalary * 0.3 - 955, 0));
+    else if (basicSalary > 10900)
+      setTimeout(setIncomeTax(basicSalary * 0.35 - 1500, 0));
 
-    setNetsalary(
-      parseInt(basicSalary) +
-        parseInt(allowance) +
-        parseInt(overTime) -
-        parseInt(incomeTax) -
-        parseInt(pension) -
-        parseInt(deduction)
+    setTimeout(
+      setNetsalary(
+        parseInt(basicSalary) +
+          parseInt(allowance) +
+          parseInt(overTime) -
+          parseInt(incomeTax) -
+          parseInt(pension) -
+          parseInt(deduction)
+      ),
+      100
     );
   };
   return (
