@@ -48,7 +48,7 @@ const Payrol = () => {
           parseInt(pension) -
           parseInt(deduction)
       ),
-      100
+      1000
     );
   };
   return (
